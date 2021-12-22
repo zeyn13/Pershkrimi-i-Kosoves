@@ -42,109 +42,12 @@
         <div class="default-padding" style="border-bottom: 1px solid #3e4042">
           <div class="user-settings">
             <span>KOSOVO</span>
-            
-            <ul>
-              <li class="settings-wrapper">
-                <div class="drop-btn">
-                  Settings <i class="uil uil-setting"></i>
-                </div>
-                <div class="wrapper">
-                  <ul class="menu-bar">
-                    <li class="help-item">
-                      <a href="#">
-                        <div class="settings-icons">
-                          <span class="fas fa-search"></span>
-                        </div>
-                        Web Tools <i class="fas fa-angle-right"></i>
-                      </a>
-                    </li>
-                    <li class="setting-item">
-                      <a href="#">
-                        <div class="settings-icons">
-                          <span class="fas fa-cog"></span>
-                        </div>
-                        Settings <i class="fas fa-angle-right"></i>
-                      </a>
-                    </li>
-                  </ul>
-                  <ul class="setting-drop">
-                    <li class="arrow back-setting-btn">
-                      <span class="fas fa-arrow-left"></span>Settings
-                    </li>
-                    <li>
-                      <a href="#">
-                        <div class="settings-icons">
-                          <span class="fab fa-expeditedssl"></span>
-                        </div>
-                        Terms & Conditions
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <div class="settings-icons">
-                          <span class="fas fa-cog"></span>
-                        </div>
-                        Privacy Policy
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <div class="settings-icons">
-                          <span class="fas fa-exclamation-triangle"></span>
-                        </div>
-                        Disclaimer
-                      </a>
-                    </li>
-                  </ul>
-                  <ul class="help-drop">
-                    <li class="arrow back-help-btn">
-                      <span class="fas fa-arrow-left"></span>Web tools
-                    </li>
-                    <li>
-                      <a href="#">
-                        <div class="settings-icons">
-                          <span class="far fa-moon"></span>
-                        </div>
-                        Night Mode
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <div class="settings-icons">
-                          <span class="fas fa-cookie-bite"></span>
-                        </div>
-                        Edit Cookies
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <div class="settings-icons">
-                          <span class="far fa-envelope"></span>
-                        </div>
-                        Contact
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <div class="settings-icons">
-                          <span class="fas fa-bug"></span>
-                        </div>
-                        Report
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li>
-                <a href="#">My Account <i class="uil uil-user"></i></a>
-              </li>
-            </ul>
           </div>
         </div>
         <!--  -->
         <div class="default-padding">
           <div class="search-form">
-            <img src="images/logo.PNG" id="logo" alt="" />
+            <img src="img/kosovo.png" id="logo" alt="" />
             <!--  -->
             <form action="#">
               <div class="dropmenu">
@@ -152,13 +55,13 @@
                   All <i class="uil uil-angle-down"></i>
                 </a>
                 <div class="droplist">
-                  <a href="prishtine.html">Pristine</a>
+                  <a href="prishtine.html">Prishtina</a>
                   <a href="ferizaj.html">Ferizaj</a>
                   <a href="gjakova.html">Gjakova</a>
                   <a href="prizren.html">Prizren</a>
                   <a href="gjilan.html">Gjilan</a>
                   <a href="peja.html">Peja</a>
-                  <a href="others.html">Te tjeret</a>
+                  <a href="others.html">Others</a>
                 </div>
   
               </div>
@@ -179,7 +82,6 @@
           <br>
 
             <h1>Kosovo</h1>
-          <p><img src="kosovo.png"  width="250" height="150" align="right" /></p>
 
           <p>Kosovo, officially the Republic of Kosovo, is a partially recognised state in Southeast Europe. It lies at the centre of the Balkans,
             occupying an area of 10,887 km2 (4,203 sq mi), with a population of a. 1.8 million;
@@ -207,11 +109,8 @@
         const menu_wrapper = document.querySelector(".wrapper");
         const menu_bar = document.querySelector(".menu-bar");
         const setting_drop = document.querySelector(".setting-drop");
-        const help_drop = document.querySelector(".help-drop");
         const setting_item = document.querySelector(".setting-item");
-        const help_item = document.querySelector(".help-item");
         const setting_btn = document.querySelector(".back-setting-btn");
-        const help_btn = document.querySelector(".back-help-btn");
         drop_btn.onclick = () => {
           menu_wrapper.classList.toggle("show");
           tooltip.classList.toggle("show");
@@ -222,19 +121,9 @@
             setting_drop.style.display = "block";
           }, 100);
         };
-        help_item.onclick = () => {
-          menu_bar.style.marginLeft = "-300px";
-          setTimeout(() => {
-            help_drop.style.display = "block";
-          }, 100);
-        };
         setting_btn.onclick = () => {
           menu_bar.style.marginLeft = "0px";
           setting_drop.style.display = "none";
-        };
-        help_btn.onclick = () => {
-          help_drop.style.display = "none";
-          menu_bar.style.marginLeft = "0px";
         };
       </script>
       <!-- /drop list -->
