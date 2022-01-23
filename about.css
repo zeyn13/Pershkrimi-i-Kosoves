@@ -94,6 +94,15 @@ ul.topnav {
   ul.topnav li.right {float: right;}
   
   @media screen and (max-width: 600px) {
+    .topnav{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: stretch;
+        align-content: stretch;
+    }
+
     ul.topnav li.right, 
     ul.topnav li {float: none;}
   }

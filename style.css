@@ -6,7 +6,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-html,body{
+body{
     display: grid;
     height: 100%;
     width: 100%;
@@ -35,11 +35,26 @@ html,body{
   ul.topnav li a.active {background-color: #fa4299;}
   
   ul.topnav li.right {float: right;}
+
+
   
   @media screen and (max-width: 600px) {
+    .topnav{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: stretch;
+	align-content: stretch;
+    }
+
+  
     ul.topnav li.right, 
-    ul.topnav li {float: none;}
+    ul.topnav li {float: none;};
+    
   }
+
+
 
 .wrapper{
     overflow: hidden;
@@ -62,6 +77,7 @@ html,body{
     text-align: center;
     transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
 }
+
 
 .wrapper .form-container{
     width: 100%;
@@ -185,3 +201,4 @@ form .field input[type="submit"]{
     cursor: pointer;
     background: -webkit-linear-gradient(left, #a445b2, #fa4299);
 }
+
