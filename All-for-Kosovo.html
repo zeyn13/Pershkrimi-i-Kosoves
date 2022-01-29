@@ -31,6 +31,8 @@ if(isset($_SEESION['username'])){
     <!-- CSS -->
     <link rel="stylesheet" href="home.css" />
     <script type="text/javascript" src="javascript.js"></script>
+    <script type="text/javascript" src="Javasc.js"></script>
+
 </head>
 <body>
 
@@ -43,38 +45,38 @@ if(isset($_SEESION['username'])){
       </ul>
 
 
-    <br> <br>
-    <div class="slideshow-container">
+    <br> <br> <br>
 
-      <div class="mySlides fade">
-        <div class="numbertext">1 / 3</div>
-        <img src="img/pzz.jpg" style="width:100%">
-        <div class="text">Caption Text</div>
-      </div>
-      
-      <div class="mySlides fade">
-        <div class="numbertext">2 / 3</div>
-        <img src="img//view-item-2.png" style="width:100%">
-        <div class="text">Caption Two</div>
-      </div>
-      
-      <div class="mySlides fade">
-        <div class="numbertext">3 / 3</div>
-        <img src="img/peja.jpeg" style="width:100%">
-        <div class="text">Caption Three</div>
-      </div>
-      
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      
-      </div>
-      <br>
-      
-      <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span> 
-        <span class="dot" onclick="currentSlide(2)"></span> 
-        <span class="dot" onclick="currentSlide(3)"></span> 
-      </div>
+  <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="img/PZ1.jpg">
+  <div class="text">Prizren</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="img/prishtine.jpeg">
+  <div class="text">Prishtin</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="img/ferizaj.jpeg">
+  <div class="text">Ferizaj</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
 
     <div class="attention-grabber">
         <i class="uil uil-shield-check"></i>
@@ -108,8 +110,8 @@ if(isset($_SEESION['username'])){
                 </div>
   
               </div>
-              <input type="text" placeholder="Search.." />
-              <button id="btnSearch">
+              <input type="text" placeholder="Search.." id="search" onchange="openPage()" >
+              <button type="submit">
                 <i class="uil uil-search"></i>
               </button>
             </form>
