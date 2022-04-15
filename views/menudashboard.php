@@ -1,3 +1,6 @@
+<?php
+require_once '../controllers/menucontroller.php';
+?>
 <style>
 *{
   font-family: sans-serif; 
@@ -55,13 +58,28 @@
               <th>Menu image</th>
               <th>Menu title</th>
               <th>Menu body</th>
-            </tr>
+              </tr>
         </thead>
-        </table>
+        <tbody>
+          <?php
+          $m =  new menucontroller;
+          $allMenu = $m->readData();
+          foreach($allMenu as $menu):
+            ?>
+          <tr>
+            <td><?php echo $menu['menu_image']; ?></td>
+            <td><?php echo $menu['menu_title']; ?></td>
+            <td><?php echo $menu['menu_body']; ?></td>
+            <td><a href="edit-menu.php?id=<?php echo $menu['id'];?>">Edit</a></td>
+            <td><a href="delete-menu.php?id=<?php echo $menu['id'];?>">Delete</a></td>
+          </tr>
+          <?php endforeach; ?>
+        </tbody>
+    </table>
          
        
     
-         </div>
+</div>
          
        
     
