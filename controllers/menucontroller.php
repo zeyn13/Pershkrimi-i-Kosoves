@@ -17,7 +17,7 @@ class menucontroller{
     
     //Metoda Insert
     public function insert($request){
-        
+        $request['image'] = './img/' .$request['image'];
     
 
         $query = $this->db->pdo->prepare('INSERT INTO menu (menu_image, menu_title, menu_body)
