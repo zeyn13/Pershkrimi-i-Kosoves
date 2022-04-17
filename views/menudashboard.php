@@ -51,6 +51,7 @@ require_once '../controllers/menucontroller.php';
 </style>
 
 
+
 <div>
     <table class="content-table">
         <thead>
@@ -58,7 +59,7 @@ require_once '../controllers/menucontroller.php';
               <th>Menu image</th>
               <th>Menu title</th>
               <th>Menu body</th>
-              </tr>
+            </tr>
         </thead>
         <tbody>
           <?php
@@ -76,9 +77,6 @@ require_once '../controllers/menucontroller.php';
           <?php endforeach; ?>
         </tbody>
     </table>
-         
-       
-    
 </div>
          
        
